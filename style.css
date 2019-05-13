@@ -1,0 +1,271 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+a{
+  text-decoration: none;
+  
+}
+.container{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template: 25vh 1em 41vh 1em auto auto/1fr;
+  
+  
+  /* border: solid 3px green; */
+  box-sizing: border-box;
+  position: relative;
+  
+}
+.header{
+  /* border: solid red 1px; */
+  background: #fff;
+  border-radius: 0 0 10% 10%;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  padding: 0 15px;
+  line-height: 1.5em;
+  position: relative;
+  z-index: 4;
+  
+}
+.header a {
+  color: black;
+}
+
+.social{
+  /* border: yellow solid 2px; */
+  align-self: center;
+  
+  
+}
+.icono{
+  margin-right: 5px;
+}
+.fa-facebook{
+  color: #3b5998;
+}
+.fa-instagram{
+  color: #cc0153;
+}
+.fa-whatsapp{
+  color: #72b239;
+}
+.tel{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.fa-envelope{
+  color: #ff423c;
+}
+.contact{
+  align-self: center;
+}
+.logo{
+  /* border: solid black 2px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+
+}
+.logo img{
+  width: 15em;
+  height: 100%;
+  
+}
+.relleno{
+  width: 100%;
+  height: 200%;
+  background: #1a1a1a;
+  position: relative;
+  top: -1em;
+  z-index: 2;
+}
+.relleno2 {
+  width: 100%;
+  height: 130%;
+  background: #1a1a1a;
+  position: relative;
+  top: -0.2em;
+  z-index: 3;
+}
+
+.hero{
+  
+  background: url(/images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+
+  /* background-position-x: -2em; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+ 
+  
+  
+  
+}
+
+.nav{
+  width: 90%;
+  margin: 0 auto;
+ 
+  position: relative;
+  z-index: 2;
+  
+}
+.nav img{
+  width: 100%;
+  border: 1px #1a1a1a solid;
+  display: block;
+  border-radius: 0  0 3em 3em;
+}
+.catalogo-container{
+  background: #fff;
+}
+nav{
+  width: 60%;
+  padding: 0.3em;
+  margin: 0 auto;
+  text-align: center;
+  background: #1a1a1a;
+  border-radius: 0 0  3em 3em;
+}
+nav a {
+  color: white;
+  padding: 1em;
+  font-weight: bold;
+}
+nav a:hover{
+  color: #ff111c;
+ 
+}
+.tapas{
+  background: url(/images/tapasheader.png);
+  background-size: 15em;
+  background-repeat: no-repeat;
+  margin:0 auto;
+  width: 90%;
+  height: 100%;
+  /* border: 2px blue solid; */
+  display: flex;
+  margin-top: 1em;
+  box-shadow: 8px 8px 6px -7px rgba(0,0,0,0.75);
+  /* border-left: 2px solid #1a1a1aaf; */
+}
+h1{
+  color: white;
+  text-align: center;
+}
+/* ESTILO DE LA GALERIA */
+.galeria{
+  width: 100%;
+  margin: auto;
+  list-style: none;
+  padding: 4em 3em 2em 3em;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.galeria li {
+  margin: 5px;
+  border-bottom: 2px solid #ff111c;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 500;
+  
+  background: #1a1a1acc;
+  padding-bottom: 0.2em; 
+}
+.galeria li a {
+  color: #fff;
+}
+
+.galeria img {
+  width: 232px;
+ 
+  display: block;
+}
+/* ESTILOS DEL MODAL */
+
+.modal{
+  position: absolute;
+  left: -100%;
+
+}
+.modal:target {
+  transition: all 0.5s ease;
+  display: block;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100% ;
+  z-index: 6;
+}
+.modal h3 {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  margin: 15px 0;
+}
+.imagen{
+  width: 100%;
+  height: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imagen a {
+  color: #fff;
+  font-size: 40px;
+  text-decoration: none;
+  margin: 0 10px;
+
+}
+.imagen a:nth-child(2){
+  margin: 0;
+  height: 100%;
+  flex-shrink: 2;
+}
+.imagen img {
+  width: 500px;
+  height: 100%;
+  max-width: 100%;
+  border: 6px solid #3131;
+  box-sizing: border-box;
+}
+.cerrar{
+  display: block;
+  background: #fff;
+  width: 25px;
+  height: 25px;
+  margin: 15px auto;
+  text-align: center;
+  text-decoration: none;
+  font-style: 25px;
+  color:#000;
+  padding: 5px;
+  border-radius: 50%;
+  line-height: 25px;
+
+
+}
+.cerrar:hover{
+  background: #ff111c;
+  color: white;
+}
