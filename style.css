@@ -14,7 +14,7 @@ a{
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template: 25vh 1em 41vh 1em auto auto/1fr;
+  grid-template: auto 1em auto 1em auto auto auto/1fr;
   
   
   /* border: solid 3px green; */
@@ -95,6 +95,14 @@ a{
   position: relative;
   top: -0.2em;
   z-index: 3;
+  
+
+  
+}
+.relleno2 img{
+  width: 20em;
+  position: absolute;
+ right: 0;
 }
 
 .hero{
@@ -105,17 +113,17 @@ a{
   background-position-x: center;
 
   /* background-position-x: -2em; */
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 100%;
-  height: 100%;
+  
+  
  
   
   
   
 }
-
+.hero img {
+  visibility: hidden;
+  width: 100%;
+}
 .nav{
   width: 90%;
   margin: 0 auto;
@@ -126,7 +134,8 @@ a{
 }
 .nav img{
   width: 100%;
-  border: 1px #1a1a1a solid;
+ 
+  box-shadow: 5px 5px 17px -8px rgba(0,0,0,0.75);
   display: block;
   border-radius: 0  0 3em 3em;
 }
@@ -134,7 +143,7 @@ a{
   background: #fff;
 }
 nav{
-  width: 60%;
+  width: 80%;
   padding: 0.3em;
   margin: 0 auto;
   text-align: center;
@@ -145,6 +154,7 @@ nav a {
   color: white;
   padding: 1em;
   font-weight: bold;
+  font-size: 1.1em;
 }
 nav a:hover{
   color: #ff111c;
@@ -201,8 +211,7 @@ h1{
 /* ESTILOS DEL MODAL */
 
 .modal{
-  position: absolute;
-  left: -100%;
+  display: none;
 
 }
 .modal:target {
@@ -268,4 +277,145 @@ h1{
 .cerrar:hover{
   background: #ff111c;
   color: white;
+}
+.footer {
+  position: relative;
+  /* top: -40px; */
+  z-index: 3;
+  padding: 10px;
+  display: inherit;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 300px;
+  background: #222222;
+  border-radius: 7% 7% 0% 0%;
+  color: #fff;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1em;
+  /* border-top: 2px solid #de1822d7; */
+}
+.footer h2{
+  margin-bottom: 10px;
+ 
+}
+.marca{
+  display: inherit;
+  justify-self: center;
+  
+}
+.marca img{
+width: 250px;
+justify-self: center;
+}
+.contactanos{
+  text-align: left;
+  display: inherit;
+  justify-self: center;
+}
+.siguenos{
+  display: inherit;
+  grid-template-rows: 20% 80%;
+}
+.siguenos .social{
+  position: relative;
+  align-self:center;
+  top:-20px; 
+}
+.siguenos span{
+  font-size: 30px;
+  padding: 10px;
+}
+
+ @media screen and (max-width: 768px){
+  .header {
+    justify-content: center;
+  }
+  .social{
+    display: none;
+  }
+  .contact{
+    display: none;
+  }
+  .hero{
+  
+    background: url(/images/banner780.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+  
+    /* background-position-x: -2em; */
+    
+    
+   
+    
+    
+    
+  }
+  .hero img {
+    visibility: hidden;
+    width: 171%;
+  }
+  .relleno2 img {
+    width: 15em;
+  }
+  .nav{
+    width: 100%;
+  }
+  nav {
+    width: 79%;
+    padding: 0.3em;
+    margin: 0 auto;
+    text-align: center;
+    background: #1a1a1a;
+    border-radius: 0 0 3em 3em;
+}
+
+.footer {
+  
+  grid-template-columns: 1fr 1fr;
+  
+}
+.siguenos{
+  display: none;
+  
+}
+} 
+
+@media screen and (max-width: 679px){
+  .container {
+    
+    grid-template: auto 1em auto 1em auto auto/1fr;
+    
+}
+.header {
+  
+  /* border: solid red 1px; */
+  justify-content: center;
+  flex-flow: row wrap;
+  
+}
+.social {
+  /* border: yellow solid 2px; */
+  align-self: center;
+  width: 50%;
+}
+.logo {
+  /* border: solid black 2px; */
+  
+  order: 3;
+ 
+}
+.relleno2 img {
+  width: 15em;
+}
+}
+
+@media screen and (max-width: 566px){
+  nav {
+    width: 81%;
+    
+} 
+nav a {
+  padding: 0.5em;
+}
 }
