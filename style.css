@@ -216,24 +216,29 @@ h1{
 }
 .modal:target {
   transition: all 0.5s ease;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   background: rgba(0, 0, 0, 0.8);
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height:100% ;
   z-index: 6;
+
 }
 .modal h3 {
   color: #fff;
   font-size: 30px;
   text-align: center;
   margin: 15px 0;
+  width: 100%;
 }
 .imagen{
   width: 100%;
-  height: 50%;
+  
 
   display: flex;
   justify-content: center;
@@ -248,22 +253,24 @@ h1{
 }
 .imagen a:nth-child(2){
   margin: 0;
-  height: 100%;
+  height: auto;
   flex-shrink: 2;
 }
 .imagen img {
   width: 500px;
-  height: 100%;
+  height: auto;
   max-width: 100%;
   border: 6px solid #3131;
   box-sizing: border-box;
+  display: block;
+  margin: auto;
 }
 .cerrar{
   display: block;
   background: #fff;
   width: 25px;
   height: 25px;
-  margin: 15px auto;
+  margin: 24px auto;
   text-align: center;
   text-decoration: none;
   font-style: 25px;
@@ -437,4 +444,22 @@ nav a {
   
   border-radius: 0 0 1em 1em;
 }
+}
+@media screen and (max-width: 425px){
+  .modal:target {
+    
+    width: 110vw;
+   
+  
+  }
+  
+}
+@media screen and (max-width: 320px){
+  .modal:target {
+    
+    width: 143vw;
+   
+  
+  }
+  
 }
