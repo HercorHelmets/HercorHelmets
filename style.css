@@ -389,6 +389,11 @@ h1{
     grid-template: auto 1em auto 1em auto auto/1fr;
     
   }
+  .tapas {
+    
+    background-size: 12em;
+    
+}
   .header {
     
     /* border: solid red 1px; */
@@ -466,7 +471,7 @@ nav a {
 @media screen and (max-width: 320px){
   .modal:target {
     
-    width: 143vw;
+    width: 100vw;
    
   
   }
