@@ -290,13 +290,15 @@ h1{
   /* top: -40px; */
   z-index: 3;
   padding: 10px;
-  display: inherit;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
   height: 300px;
   background: #222222;
   border-radius: 7% 7% 0% 0%;
   color: #fff;
-  justify-content: center;
+  
   text-align: center;
   margin-top: 1em;
   /* border-top: 2px solid #de1822d7; */
@@ -305,22 +307,15 @@ h1{
   margin-bottom: 10px;
  
 }
-.marca{
-  display: inherit;
-  justify-self: center;
-  
-}
-.marca img{
-width: 250px;
-justify-self: center;
-}
+
+
 .contactanos{
   text-align: left;
-  display: inherit;
+  display: grid;
   justify-self: center;
 }
 .siguenos{
-  display: inherit;
+  display: block;
   grid-template-rows: 20% 80%;
 }
 .siguenos .social{
@@ -336,6 +331,9 @@ justify-self: center;
  @media screen and (max-width: 768px){
   .header {
     justify-content: center;
+  }
+  .marca{
+    display: none;
   }
   .social{
     display: none;
@@ -382,10 +380,7 @@ justify-self: center;
   grid-template-columns: 1fr 1fr;
   
 }
-.siguenos{
-  display: none;
-  
-}
+
 } 
 
 @media screen and (max-width: 679px){
@@ -445,14 +440,28 @@ nav a {
   border-radius: 0 0 1em 1em;
 }
 }
+@media screen and (max-width: 446px){
+  .galeria {
+    padding: 5em 0em 2em 0em;
+}
+}
 @media screen and (max-width: 425px){
   .modal:target {
     
-    width: 110vw;
+    width: 100vw;
    
   
   }
-  
+  nav a {
+    padding: 0.3em;
+    font-size: 1em;
+  }
+
+}
+@media screen and (max-width: 375px){
+  .galeria img {
+    width: 151px;
+}
 }
 @media screen and (max-width: 320px){
   .modal:target {
