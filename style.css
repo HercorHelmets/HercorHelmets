@@ -177,6 +177,24 @@ h1{
   color: white;
   text-align: center;
 }
+.tapas.sistemas{
+  background: url(./images/sistemasheader.png);
+  background-size: 15em;
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+.tapas.tornillos{
+  background: url(./images/tornillosheader.png);
+  background-size: 15em;
+  background-repeat: no-repeat;
+  
+}
+.tapas.repuestos{
+  background: url(./images/repuestosheader.png);
+  background-size: 15em;
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
 /* ESTILO DE LA GALERIA */
 .galeria{
   width: 100%;
