@@ -214,11 +214,11 @@ h1{
   font-size: 1.2em;
   font-weight: 500;
   
-  background: #1a1a1acc;
+  
   padding-bottom: 0.2em; 
 }
 .galeria li a {
-  color: #fff;
+  color: #000;
 }
 
 .galeria img {
