@@ -332,6 +332,9 @@ h1{
   display: grid;
   justify-self: center;
 }
+.contactanos span {
+  margin-top: 1em;
+}
 .siguenos{
   display: block;
   grid-template-rows: 20% 80%;
